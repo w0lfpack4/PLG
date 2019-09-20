@@ -1,0 +1,32 @@
+## Interface: 60000
+## Title: |cff0279ffProfession Leveling Guide: |cffffffffCore|r
+## X-DisplayName: Profession Leveling Guide - Core
+## Notes: An in-game profession leveling guide.
+## Author: Keg
+## Version: 6.0.2.1
+## LoadOnDemand: 1
+## LoadWith: Blizzard_TradeSkillUI
+## Dependencies: Blizzard_TradeSkillUI
+## OptionalDeps: Carbonite, TomTom, TradeSkillDW, TradeskillHD, Skillet
+## X-Category: Professions
+## X-Date: October 19, 2014
+## X-New: Updated blacksmithing, cooking, enchanting data. Removed level restrictions.  Temporarily removed reagent Tracker.
+
+# --- Variables ---
+Core\Variables.lua
+
+# --- Localization ---
+Localization\enUS.lua
+Localization\deDE.lua
+
+# --- Data files ---
+Data\Recipes.lua
+
+# --- Core files ---
+Core\Common.lua
+Core\Frames.lua
+Core\Display.lua
+Core\Tooltips.lua
+Core\Data.lua
+Core\Addons.lua
+Core\Core.lua
