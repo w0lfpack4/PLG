@@ -1,6 +1,10 @@
 --------------------------------------------------------------------
 -- PLG Addon Functions
 --------------------------------------------------------------------
+--[[
+	functions bypassing the c*!$ that other addons have changed so
+	everything plays well together.
+--]]
 
 ---------------------------
 -- hooks
@@ -113,24 +117,24 @@ end
 ---------------------------
 function PLG.tradeSkillAddOns.TradeSkillDW.onLoad()	
 	PLG:Debug("Function","TradeSkillDW.onLoad")
-	PLG.backframe:ClearAllPoints()
-	PLG.backframe:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 50, 0)
+	PLG.backFrame:ClearAllPoints()
+	PLG.backFrame:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 50, 0)
 end
 function PLG.tradeSkillAddOns.TradeSkillDW.onTimer()	
 	if _G["TradeSkillDW_QueueFrame"] and not PLG.varTradeSkillDWQueue then -- run once
 		PLG:Debug("Function","TradeSkillDW.onTimer")
 		PLG.varTradeSkillDWQueue = true
 		if ( _G["TradeSkillDW_QueueFrame"]:IsShown() ) then
-			PLG.backframe:ClearAllPoints()
-			PLG.backframe:SetPoint("TOPLEFT", TradeSkillDW_QueueFrame, "TOPRIGHT", 30, 0)
+			PLG.backFrame:ClearAllPoints()
+			PLG.backFrame:SetPoint("TOPLEFT", TradeSkillDW_QueueFrame, "TOPRIGHT", 30, 0)
 		end
 		_G["TradeSkillDW_QueueFrame"]:SetScript("OnShow", function(self, elapsed)
-			PLG.backframe:ClearAllPoints()	
-			PLG.backframe:SetPoint("TOPLEFT", TradeSkillDW_QueueFrame, "TOPRIGHT", 30, 0)
+			PLG.backFrame:ClearAllPoints()	
+			PLG.backFrame:SetPoint("TOPLEFT", TradeSkillDW_QueueFrame, "TOPRIGHT", 30, 0)
 		end)
 		_G["TradeSkillDW_QueueFrame"]:SetScript("OnHide", function(self, elapsed)	
-			PLG.backframe:ClearAllPoints()
-			PLG.backframe:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 50, 0)
+			PLG.backFrame:ClearAllPoints()
+			PLG.backFrame:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", 50, 0)
 		end)
 	end
 end
