@@ -1,23 +1,11 @@
 # Profession Leveling Guide (PLG)
 
-##  Folder Structure
+## Folder Structure
 PLG is the addon folder to use in WoW.  Data is the data used for recipes.  Screenshots are for Curse.
-
-## News
-
-* **Profession Leveling Guide (PLG) v5.4.8.1 just released!**
-* **Works with WoW Patch 5.4.8**
-* If you want this addon in your own language, please send a translation or edit the localization at [[http://wow.curseforge.com/addons/plg/localization/|CurseForge]]
 
 ## About PLG
 
 Profession Leveling Guide (PLG) is an in-game, load on demand guide to help you level your professions faster.  The addon loads with the WoW professions tradeskills window.  PLG will suggest a recipe that uses the fewest or cheapest materials that will give you the most skillups.  It will tell you what to make, how many to make, if you need to keep them for the next recipe, where to get the recipe, and when to see your trainer.  No complicated setup, no options, just load and go.
-
-## New In This Release
-
-* Updated blacksmithing data. 
-* Added button to clear reagent tracking database.  
-* Fixed bug when PLG stops updating, or when Smelting window is opened.
 
 ## PLG Features
 
@@ -56,7 +44,5 @@ Profession Leveling Guide (PLG) is an in-game, load on demand guide to help you 
 ## PLG Notes
 
 * Always remember this is just a guide.  If there is an orange recipe that works better and you have the materials, use it.  And then let me know..
-* Please submit any bugs or glitches on [[http://wow.curseforge.com/addons/plg/create-ticket/|CurseForge]], and not in the comments.
 * If any Recipes/Patterns are incorrect, or another pattern works better for a particular level, please send me the information and I'll update the addon.
-* If anyone would like to provide translations, all the text can be located in the PLG\Localization\enUS.lua file or in the project [[http://wow.curseforge.com/addons/plg/localization/|localization]] area.
 * If PLG is not working with your TradeSkill addon, let me know and I'll try to support it.
